@@ -29,9 +29,25 @@
     "grunt-kahvesi": "^0.2.2",
     "grunt-mocha-test": "^0.12.7",
     "mocha": "^2.2.1",
-    "should": "^5.2.0"
+    "should": "^5.2.0",
+    "mockery": "^2.0.0",
+    "nsp": "^2.6.3",
+    "nyc": "^10.2.0",
+    "retire": "^1.2.12",
+    "rimraf": "^2.6.1",
+    "sinon": "^2.1.0",
+    "snazzy": "^6.0.0",
+    "standard": "^9.0.1",
+    "tap": "^10.3.0"
   },
   "scripts": {
+    "start": "appc run",
+    "lint": "standard --fix",
     "test": "grunt"
+  },
+  "standard": {
+    "ignore": [
+      "test/"
+    ]
   }
 }

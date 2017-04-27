@@ -1,7 +1,9 @@
 {
-	"type":"connector",
-	"group":"arrow",
-	"dependencies": {
-	},
-    "access":"public"
+    "type": "connector",
+    "group": "arrow",
+    "assets": {
+        "small_logo": "docs/logo.png"
+    },
+    "dependencies": {},
+    "access": "public"
 }
