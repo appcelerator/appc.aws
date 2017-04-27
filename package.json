@@ -1,6 +1,6 @@
 {
-  "name": "appc.aws",
-  "description": "Amazon AWS Connector",
+  "name": "appc.aws.s3",
+  "description": "Amazon AWS S3 Connector",
   "version": "1.0.0",
   "author": "Jeff Haynie",
   "license": "",

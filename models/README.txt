@@ -2,4 +2,4 @@ Any models that you place in this directory will be distributed with the connect
 
 You can retrieve these models using the model name:
 
-appc.aws/modelname
+appc.aws.s3/modelname

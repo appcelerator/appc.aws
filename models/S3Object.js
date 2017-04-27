@@ -37,7 +37,7 @@ var S3Object = Arrow.Model.extend('S3Object', {
 	 * return a signed url. pass 'expires' with the number of seconds to expired the URL. default is 900 (15 min)
 	 */
 	getSignedUrl: function(params) {
-		var connector = Arrow.getConnector('appc.aws');
+		var connector = Arrow.getConnector('appc.aws.s3');
 		return connector.getSignedUrl(connector.getModel('S3Object'), this, params);
 	}
 });
