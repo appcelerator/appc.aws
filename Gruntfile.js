@@ -1,34 +1,28 @@
 module.exports = function (grunt) {
   // Project configuration.
   grunt.initConfig({
-    mochaTest: {
-      options: {
-        timeout: 30000,
-        reporter: 'spec',
-        ignoreLeaks: false,
-        globals: [
-          'requestSSLHooks',
-          'requestSSLFingerprints',
-          'requestSSLInitializing',
-          'requestSSLInsideHook',
-          'requestSSLInitialized'
-        ]
-      },
-      src: ['test/**/*.js']
-    },
-    kahvesi: {
-      src: ['test/**/*.js']
+    mocha_istanbul: {
+      coverage: {
+        src: 'test',
+        options: {
+          timeout: 30000,
+          ignoreLeaks: false,
+          check: {
+            statements: 85,
+            branches: 79,
+            functions: 89,
+            lines: 85
+          }
+        }
+      }
     },
     clean: ['tmp']
   })
 
-  // Load grunt plugins for modules
-  grunt.loadNpmTasks('grunt-mocha-test')
-  grunt.loadNpmTasks('grunt-contrib-jshint')
+  // Load grunt plugins for modules.
+  grunt.loadNpmTasks('grunt-mocha-istanbul')
   grunt.loadNpmTasks('grunt-contrib-clean')
-  grunt.loadNpmTasks('grunt-kahvesi')
 
-  // register tasks
-  grunt.registerTask('cover', ['kahvesi', 'clean'])
-  grunt.registerTask('default', ['mochaTest', 'clean'])
+  // Register tasks.
+  grunt.registerTask('default', ['mocha_istanbul:coverage', 'clean'])
 }
