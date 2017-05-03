@@ -1,6 +1,6 @@
-# appc.aws
+# appc.aws.s3
 
-Amazon AWS Connector
+Amazon AWS S3 Connector
 
 
 

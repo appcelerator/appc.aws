@@ -1,10 +1,12 @@
 {
-	"type":"connector",
-	"group":"arrow",
-	"dependencies": {
-	},
-    "owners":[
-        "jhaynie@appcelerator.com"
-    ],
-    "access":"public"
+    "type": "connector",
+    "group": "arrow",
+    "assets": {
+        "small_logo": "docs/logo.png"
+    },
+    "dependencies": {},
+    "access": "public",
+    "owners": [
+        "vtrifonov@axway.com"
+    ]
 }
