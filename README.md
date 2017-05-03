@@ -7,7 +7,7 @@ An Arrow connector to AWS S3.
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Usage](#usage)
-- [Service Compatibility](#service-coverage)
+- [Service Compatibility](#service-compatibility)
 - [Changelog](#changelog)
 - [Development](#development)
 - [License](#license)
