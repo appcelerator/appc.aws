@@ -13,3 +13,4 @@ web/app/
 .jshintrc
 .nyc_output
 *.log
+scan-retire.txt

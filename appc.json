@@ -5,5 +5,8 @@
         "small_logo": "docs/logo.png"
     },
     "dependencies": {},
-    "access": "public"
+    "access": "public",
+    "owners": [
+        "vtrifonov@axway.com"
+    ]
 }

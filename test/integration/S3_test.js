@@ -27,7 +27,7 @@ describe('S3', function () {
   it('should connect to AWS', function (done) {
     // make sure AWS connectivity is setup
     var AWS = require('aws-sdk')
-    var config = require('../conf/local.js').connectors['appc.aws.s3']
+    var config = require('../../conf/local.js').connectors['appc.aws.s3']
     AWS.config.update(config)
     var s3 = new AWS.S3()
     s3.listBuckets(function (err) {

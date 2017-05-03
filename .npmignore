@@ -3,3 +3,4 @@ test
 node_modules
 .travis.yml
 /Gruntfile.js
+scan-retire.txt
