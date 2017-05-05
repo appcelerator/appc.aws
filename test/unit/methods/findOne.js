@@ -30,16 +30,18 @@ test('### Should invoke findOne ###', function (t) {
 
   // Spies, mocks, stubs
   const cbSpy = sandbox.spy()
-  const _invokeStub = sandbox.stub(connector, '_invoke')
+  const findByIDStub = sandbox.stub(connector, 'findByID').yieldsAsync()
 
   // Function call
   method.call(connector, S3BucketModel, 5, cbSpy)
 
-  // Asserts
-  t.ok(_invokeStub.calledOnce)
+  setImmediate(function () {
+    // Asserts
+    t.ok(findByIDStub.calledOnce)
 
-  sandbox.restore()
-  t.end()
+    sandbox.restore()
+    t.end()
+  })
 })
 
 test('### Stop Arrow ###', function (t) {
