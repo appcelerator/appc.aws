@@ -16,7 +16,7 @@ test('### Start Arrow ###', function (t) {
       arrow = inst
 
       // Set-up
-      connector = arrow.getConnector('appc.aws.s3')
+      connector = arrow.getConnector('appc.aws-s3')
       S3BucketModel = arrow.getModel('S3Bucket')
 
       t.ok(arrow, 'Arrow has been started')

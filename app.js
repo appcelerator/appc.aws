@@ -19,7 +19,7 @@ const User = Arrow.Model.extend('user', {
   fields: {
     name: { type: String, required: false, validator: /[a-zA-Z]{3,}/ }
   },
-  connector: 'appc.aws.s3' // a model level connector
+  connector: 'appc.aws-s3' // a model level connector
 })
 
 // create some users programmatically

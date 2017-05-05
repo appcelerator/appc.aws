@@ -20,11 +20,11 @@ So first [create your Arrow application](http://docs.appcelerator.com/platform/l
 In the terminal from the root of your app install the connector with:
 
 ```sh 
-appc install connector/appc.aws.s3
+appc install connector/appc.aws-s3
 ```
 
 # Configuration
-After the installation you will see `conf/appc.aws.s3.default.js` config file.
+After the installation you will see `conf/appc.aws-s3.default.js` config file.
 
 It will contain template with all configuration parameters.
 
@@ -33,7 +33,7 @@ Some of them have default values but other must be configured appropriately.
 For this connector you need to set the following configuration properties:
 ```sh
     connectors: {
-      'appc.aws.s3': {
+      'appc.aws-s3': {
         accessKeyId: '<MANDATORY. ACCESS KEY ID>'
         secretAccessKey: '<MANDATORY. SECRET ACCESS KEY>'
       }

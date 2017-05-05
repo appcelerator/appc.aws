@@ -14,8 +14,8 @@ describe('S3', function () {
     server = new Arrow({ logLevel: 'warn' })
     server.start(function (err) {
       if (err) { return done(err) }
-      BucketModel = server.getModel('appc.aws.s3/S3Bucket')
-      ObjectModel = server.getModel('appc.aws.s3/S3Object')
+      BucketModel = server.getModel('appc.aws-s3/S3Bucket')
+      ObjectModel = server.getModel('appc.aws-s3/S3Object')
       done()
     })
   })
@@ -27,7 +27,7 @@ describe('S3', function () {
   it('should connect to AWS', function (done) {
     // make sure AWS connectivity is setup
     var AWS = require('aws-sdk')
-    var config = require('../../conf/local.js').connectors['appc.aws.s3']
+    var config = require('../../conf/local.js').connectors['appc.aws-s3']
     AWS.config.update(config)
     var s3 = new AWS.S3()
     s3.listBuckets(function (err) {

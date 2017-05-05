@@ -19,7 +19,7 @@ test('### Start Arrow ###', (t) => {
       arrow = inst
 
       // Set-up
-      connector = arrow.getConnector('appc.aws.s3')
+      connector = arrow.getConnector('appc.aws-s3')
       S3 = {
         listBuckets: () => { },
         headBucket: () => { },
@@ -46,7 +46,7 @@ test('### Should create S3BucketConnector ###', (t) => {
   t.ok(s3BucketConnector.Arrow)
   t.ok(s3BucketConnector.connector)
   t.ok(s3BucketConnector.S3)
-  t.equal(s3BucketConnector.connector.name, 'appc.aws.s3')
+  t.equal(s3BucketConnector.connector.name, 'appc.aws-s3')
 
   t.end()
 })

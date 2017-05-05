@@ -33,7 +33,7 @@ var S3Bucket = Arrow.Model.extend('S3Bucket', {
       type: Date, description: 'the creation date of the bucket', readonly: true, name: 'CreationDate'
     }
   },
-  connector: 'appc.aws.s3'
+  connector: 'appc.aws-s3'
 })
 
 module.exports = S3Bucket

@@ -15,7 +15,7 @@ test('### Start Arrow ###', (t) => {
       arrow = inst
 
       // Set-up
-      connector = arrow.getConnector('appc.aws.s3')
+      connector = arrow.getConnector('appc.aws-s3')
       S3BucketModel = arrow.getModel('S3Bucket')
 
       t.ok(arrow, 'Arrow has been started')
@@ -33,7 +33,7 @@ test('### Should return S3BucketConnector ###', (t) => {
   t.ok(conn.Arrow)
   t.ok(conn.connector)
   t.ok(conn.S3)
-  t.equal(conn.connector.name, 'appc.aws.s3')
+  t.equal(conn.connector.name, 'appc.aws-s3')
 
   t.end()
 })

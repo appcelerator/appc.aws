@@ -12,7 +12,7 @@ test('### Start Arrow ###', function (t) {
   server()
     .then((inst) => {
       arrow = inst
-      connector = arrow.getConnector('appc.aws.s3')
+      connector = arrow.getConnector('appc.aws-s3')
 
       t.ok(arrow, 'Arrow has been started')
       t.end()

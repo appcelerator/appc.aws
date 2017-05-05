@@ -87,13 +87,13 @@ var S3Object = Arrow.Model.extend('S3Object', {
       type: Date, description: 'the last modification date', name: 'LastModified', readonly: true
     }
   },
-  connector: 'appc.aws.s3',
+  connector: 'appc.aws-s3',
 
   /**
    * return a signed url. pass 'expires' with the number of seconds to expired the URL. default is 900 (15 min)
    */
   getSignedUrl: function (params) {
-    var connector = Arrow.getConnector('appc.aws.s3')
+    var connector = Arrow.getConnector('appc.aws-s3')
     return connector.getSignedUrl(connector.getModel('S3Object'), this, params)
   }
 })
