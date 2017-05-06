@@ -6,8 +6,7 @@
     },
     "dependencies": {},
     "access": "public",
-    "owners": [
-        "vtrifonov@axway.com",
-        "jhaynie@appcelerator.com"
+    "owners": [        
+        "ptodorov@axway.com"
     ]
 }
